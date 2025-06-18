@@ -2,11 +2,10 @@ name: Deploy to AWS ECS
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 env:
-  AWS_REGION: us-west-2
-
+  AWS_REGION: us-east-1
 jobs:
   deploy:
     runs-on: ubuntu-latest
